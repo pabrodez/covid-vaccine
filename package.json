@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "download-today-status": "node lib/fetch-data.js"
   },
   "dependencies": {
+    "download": "^8.0.0",
+    "fs-extra": "^9.1.0",
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"

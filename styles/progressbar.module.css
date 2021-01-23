@@ -1,0 +1,36 @@
+.progressBar {
+    width: 100%;
+    /* max-width: 1000px; */
+    position: relative;
+    margin-top: 2rem;
+}
+
+.progressBar::before {
+    content: attr(data-format);
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+}
+
+.progressBar div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.progressBar progress {
+    appearance: none;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 40px;
+    margin-top: 1.2rem;
+    border: 2px solid  #4c566a;
+    box-shadow: 3px 3px #8fbcbb;
+}
+
+.progressBar input {
+    margin: 0 0.3rem;
+}
+

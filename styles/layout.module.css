@@ -1,0 +1,26 @@
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+  .container main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    min-height: 70vh;
+    /* padding: 0 2rem; */
+  }
+
+  .container h1 {
+    text-align: center;
+    margin-top: 4rem;
+    border-bottom: 2px solid #8fbcbb;
+    padding-bottom: 1rem;
+  }
