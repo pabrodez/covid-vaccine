@@ -46,7 +46,7 @@ export default function Home({ data, updated }) {
   return (
 
     <Layout>
-      <h1 className={styles.title}>COVID-19 vaccination tracker in the UK</h1>
+      <h1 className={styles.title}>UK COVID-19 vaccination tracker</h1>
 
       <section className={styles.cardGrid}>
         <div className={styles.card}>

@@ -23,7 +23,7 @@ export default function ProgressBar({ data }) {
                         onChange={() => setDose(LOOKUP.first)}
                         type="radio"
                     />
-            See people administered with <mark>first dose</mark>
+            Population administered with <mark>first dose</mark>
           </label>
                 <label>
                     <input
@@ -31,7 +31,7 @@ export default function ProgressBar({ data }) {
                         onChange={() => setDose(LOOKUP.second)}
                         type="radio"
                     />
-            See people administered with <mark>second dose</mark>
+            Population administered with <mark>second dose</mark>
           </label>
             </div>
 
