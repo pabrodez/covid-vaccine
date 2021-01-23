@@ -1,0 +1,28 @@
+name: Node.js CI
+
+on:
+  schedule: 
+    - cron: 0 */4 * * *
+
+jobs:
+  downloadStatus:
+
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      -name: Install dependencies
+        run: npm install
+      - name: Download today's data
+        run: npm run download-today-status
+      - name: Push to repo
+        run: |
+          git config user.email "pabrodez@gmail.com"
+          git config user.name "pabrodez"
+          git add .
+          git commit -m "Add today's data"
+          git push

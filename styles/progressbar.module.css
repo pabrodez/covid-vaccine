@@ -9,7 +9,8 @@
     content: attr(data-format);
     position: absolute;
     right: 10px;
-    bottom: 2px;
+    bottom: 0;
+    font-size: 1.7em;
 }
 
 .progressBar div {
