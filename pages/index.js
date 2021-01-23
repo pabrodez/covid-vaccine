@@ -1,6 +1,4 @@
-import Head from 'next/head'
-import { useState } from 'react';
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import { readData } from '../lib/read-data'
 import ProgressBar from '../components/ProgressBar'
 import LastUpdate from '../components/LastUpdate'
